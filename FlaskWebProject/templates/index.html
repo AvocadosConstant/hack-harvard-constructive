@@ -1,121 +1,27 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>------</title>
-    {% include 'includes/head.html' %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/splash.css') }}" />
-    <link href="http://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet" type="text/css">
-<meta name="google-signin-client_id" content="724632301419-0cdonpuq74mk8sj2tqb1j0pb7g6tk9r2.apps.googleusercontent.com">
-    <!--
-    <script>
-      var googleUser = {};
-      var startApp = function() {
-        gapi.load('auth2', function(){
-          // Retrieve the singleton for the GoogleAuth library and set up the client.
-          auth2 = gapi.auth2.init({
-            client_id: '724632301419-0cdonpuq74mk8sj2tqb1j0pb7g6tk9r2.apps.googleusercontent.com',
-            cookiepolicy: 'single_host_origin',
-            // Request scopes in addition to 'profile' and 'email'
-            //scope: 'additional_scope'
-          });
-          attachSignin(document.getElementById('customBtn'));
-        });
-      };
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>------</title>
+        {% include 'includes/head.html' %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/splash.css') }}" />
+        <link href="http://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet" type="text/css">
+        <meta name="google-signin-client_id" content="724632301419-0cdonpuq74mk8sj2tqb1j0pb7g6tk9r2.apps.googleusercontent.com">
+    </head>
 
-      function attachSignin(element) {
-        console.log(element.id);
-        auth2.attachClickHandler(element, {},
-            function(googleUser) {
-              document.getElementById('name').innerText = "Signed in: " +
-                  googleUser.getBasicProfile().getName();
-            }, function(error) {
-              alert(JSON.stringify(error, undefined, 2));
-            });
-      }
-      </script>
-      <style type="text/css">
-        #customBtn {
-          display: inline-block;
-          background: #4285f4;
-          color: white;
-          width: 190px;
-          border-radius: 5px;
-          white-space: nowrap;
-        }
-        #customBtn:hover {
-          cursor: pointer;
-        }
-        span.label {
-          font-weight: bold;
-          color: #FAFAFA;
-        }
-        span.icon {
-          background: url('../../static/assets/img/g-normal.png') transparent 5px 50% no-repeat;
-          display: inline-block;
-          vertical-align: middle;
-          width: 42px;
-          height: 42px;
-          border-right: #2265d4 1px solid;
-        }
-        span.buttonText {
-          display: inline-block;
-          vertical-align: middle;
-          padding-left: 42px;
-          padding-right: 42px;
-          font-size: 14px;
-          font-weight: bold;
-          color: #FAFAFA;
-          /* Use the Roboto font that is loaded in the <head> */
-          font-family: 'Roboto', sans-serif;
-        }
-      </style>
-      !-->
-  </head>
-  <body class="valign-wrapper">
-    <div class="container valign center-align">
-      <div class="row">
-        <div class="col s12">
-          <h1 class="logo">Our Sweet Site</h1>
-          <h3>Subtitle Goes Here </h3>
-        
-  <!-- In the callback, you would hide the gSignInWrapper element on a
-  successful sign in 
-  <div id="gSignInWrapper">
-    <span class="label">Sign in with:</span>
-    <div id="customBtn" class="customGPlusSignIn">
-      <span class="icon"></span>
-      <span class="buttonText">Google</span>
-    </div>
-  </div>
-  <div id="name"></div>
-  <script>startApp();</script>
--->
-<div id="my-signin2"></div>
-  <script>
-    function onSuccess(googleUser) {
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-    }
-    function onFailure(error) {
-      console.log(error);
-    }
-    function renderButton() {
-      gapi.signin2.render('my-signin2', {
-        'scope': 'https://www.googleapis.com/auth/plus.login',
-        'width': 200,
-        'height': 50,
-        'longtitle': true,
-        'theme': 'dark',
-        'onsuccess': onSuccess,
-        'onfailure': onFailure
-      });
-    }
-  </script>
-
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-
-      </div>
-    </div>
-  </body>
+    <body class="valign-wrapper">
+        <div class="container valign center-align">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="logo">Cola Chuseyo</h1>
+                    <h3>Bearcats420!</h3>
+                    <div id="my-signin2">
+                    </div>
+                    <script src="{{ url_for('static', filename='assets/js/main.js') }}" ></script>
+                    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
