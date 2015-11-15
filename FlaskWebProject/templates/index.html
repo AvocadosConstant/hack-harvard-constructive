@@ -5,23 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>------</title>
         {% include 'includes/head.html' %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/splash.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/page.css') }}" />
         <link href="http://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet" type="text/css">
         <meta name="google-signin-client_id" content="724632301419-0cdonpuq74mk8sj2tqb1j0pb7g6tk9r2.apps.googleusercontent.com">
     </head>
 
-    <body class="valign-wrapper">
-        <div class="container valign center-align">
-            <div class="row">
-                <div class="col s12">
-                    <h1 class="logo">Cola Chuseyo</h1>
-                    <h3>Bearcats420!</h3>
-                    <div id="my-signin2">
+    <body>
+        <div class="row">
+            <div class="col s12">
+                <h1 class="logo">Cola Chuseyo</h1>
+                <h3>Bearcats420!</h3>
+                <div id="my-signin2">
+                </div>
+                <script src="{{ url_for('static', filename='assets/js/main.js') }}" ></script>
+                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="post row">
+                <div class="col m3 post-thumb">
+                </div>
+                <div class="col m9 post-body">
+                    <div class="post-title">
+                        Title of my submission, give me the coke.
                     </div>
-                    <script src="{{ url_for('static', filename='assets/js/main.js') }}" ></script>
-                    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+                    <div class="post-info">
+                        See comments.
+                    </div>
                 </div>
             </div>
+            <div class="divider"></div>
         </div>
     </body>
 </html>

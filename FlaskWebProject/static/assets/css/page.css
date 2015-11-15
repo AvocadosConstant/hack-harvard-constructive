@@ -1,0 +1,29 @@
+body {
+    background: #FFFED4;
+}
+
+/*  Post  */
+
+.post {
+    width: 100%;
+    height: 120px;
+    padding: 30px;
+    margin: 30px 0px;
+    background: #FFFEF6;
+}
+
+.post-thumb {
+    height: 100%;
+    background: purple;
+}
+
+.post-body {
+    height: 100%;
+}
+
+.post-title {
+    font-size: 24px;
+}
+
+.post-info {
+}
