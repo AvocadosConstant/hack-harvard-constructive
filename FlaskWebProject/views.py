@@ -6,7 +6,7 @@ from flask.ext.pymongo import PyMongo
 import pymongo
 
 def mongoconn():
-    MONGO_URL = "mongodb://bloomingwaters2:bloomingwaters2@ds042128.mongolab.com:42128/MongoLab-w"
+    MONGO_URL = "mongodb://bloomingwaters2:Bearcats420!@ds042128.mongolab.com:42128/MongoLab-w"
     connection = pymongo.MongoClient(MONGO_URL)
     db = connection.get_default_database()
     print( db.collection_names())
