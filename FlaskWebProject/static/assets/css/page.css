@@ -1,5 +1,5 @@
 body {
-    background: #FFFED4;
+    background: #FFFFE4;
 }
 
 /*  Post  */
@@ -9,7 +9,7 @@ body {
     height: 120px;
     padding: 10px;
     margin: 30px 0px;
-    background: #FFFEF6;
+    /*background: #FFFEF6;*/
 }
 
 .post-thumb {
